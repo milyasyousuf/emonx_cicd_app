@@ -25,7 +25,7 @@ SECRET_KEY = '7@d29(w5%(e!vfu3(_62jksat8hl&w-@1qb9)71kt(eqne#srs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['emonoxlfd2257.cloudapp.net']
 
 
 # Application definition

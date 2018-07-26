@@ -9,8 +9,8 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - web
-  web:
+      - emonx
+  emonx:
     build: .
     command: uwsgi --ini uwsgi.ini
     working_dir: /code/emonx
@@ -18,5 +18,3 @@ services:
       - ./emonx:/code/emonx
     ports:
       - "8000:8000"
-
-

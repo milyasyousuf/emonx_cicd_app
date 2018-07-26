@@ -28,9 +28,9 @@ services:
   web:
     build: .
     command: uwsgi --ini uwsgi.ini
-    working_dir: /code/web
+    working_dir: /code/emonx
     volumes:
-      - ./emonx:/code/web
+      - ./emonx:/code/emonx
     ports:
       - "8000:8000"
     depends_on:

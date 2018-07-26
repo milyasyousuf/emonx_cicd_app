@@ -9,12 +9,13 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - emonx
-  emonx:
+      - web
+  web:
     build: .
     command: uwsgi --ini uwsgi.ini
-    working_dir: /code/emonx
+    working_dir: /code/web
     volumes:
-      - ./emonx:/code/emonx
+      - ./web:/code/web
+      - django_admin_static:/usr/local/lib/python3.6/site-packages/django/contrib/admin/static
     ports:
       - "8000:8000"

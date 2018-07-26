@@ -1,5 +1,5 @@
 version: '2'
- 
+
 services:
   nginx:
     image: nginx:alpine
@@ -13,8 +13,8 @@ services:
   web:
     build: .
     command: uwsgi --ini uwsgi.ini
-    working_dir: /code/web
+    working_dir: /code/emonx
     volumes:
-      - ./web:/code/web
+      - ./emonx:/code/emonx
     ports:
       - "8000:8000"

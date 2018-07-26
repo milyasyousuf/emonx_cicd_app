@@ -16,6 +16,5 @@ services:
     working_dir: /code/web
     volumes:
       - ./web:/code/web
-      - django_admin_static:/usr/local/lib/python3.6/site-packages/django/contrib/admin/static
     ports:
       - "8000:8000"
